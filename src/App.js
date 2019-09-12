@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Quotes from './components/Quotes';
-import AddQuotes from './components/AddQuotes';
+import AddQuote from './components/AddQuote';
 
 class App extends Component {
   state = {
@@ -12,6 +12,7 @@ class App extends Component {
       {title: 'Imagination!', content: 'Squidward, we don´t need a television. Not as long as we have our...', author: 'Spongebob', id: 5}
     ]
   }
+
   deleteQuotes = (id) => {
     let quotes = this.state.quotes.filter(quote => {
       return quote.id !== id
@@ -20,6 +21,15 @@ class App extends Component {
       quotes: quotes
     })
   }
+
+  addQuote = (quote) => {
+    quote.id = this.state.quotes.length+1;
+    let quotes = [...this.state.quotes, quote];
+    this.setState({
+      quotes: quotes
+    })
+  }
+
   render() {
     return (
       <div className="quotes-app">
@@ -28,6 +38,7 @@ class App extends Component {
         </header>
         <main className="container">
           <Quotes quotes={this.state.quotes} deleteQuotes={this.deleteQuotes}/>
+          <AddQuote addQuote={this.addQuote}/>
         </main>
       </div>
     );
