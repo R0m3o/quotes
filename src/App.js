@@ -38,8 +38,10 @@ class App extends Component {
         </header>
         <main className="container">
           <Quotes quotes={this.state.quotes} deleteQuotes={this.deleteQuotes}/>
-          <AddQuote addQuote={this.addQuote}/>
         </main>
+        <footer>
+          <AddQuote addQuote={this.addQuote}/>
+        </footer>
       </div>
     );
   }

@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+header{
+  padding: 35px 40px;
+  box-shadow: 0px 3px 5px #c9c9c9;
+}
+
+h1{
+  color: #08025c;
+}
+
+.card{
+  margin: 60px 0px;
+  border-radius: 15px;
+}
+
+.quote-content-box{
+  padding: 30px 40px 0px;
+}
+
+h1, h2, .quote-title, .quote-text, .quote-author{
+  margin: 0px;
+}
+
+.quote-box{
+  margin: 35px 0px;
+}
+
+.quote-text{
+  font-style: italic;
+  font-size: 32px;
+  color: #84bedf;
+}
+
+.quote-author{
+  text-align: right;
+  color: #c9c9c9;
+  font-size: 25px;
+}
+
+.delete-quote-box{
+  padding: 20px 40px;
+  background-color: #08025c;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.delete-quote-btn, .add-quote-btn{
+  background-color: #FFFFFF;
+  outline: none;
+  border: none;
+  color: #08025c;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.delete-quote-btn:hover, .add-quote-btn:hover{
+  color: #FFFFFF;
+  background-color: #84bedf;
+}
+
+footer{
+  background-color: #08025c;
+  padding: 30px 150px 80px;
+}
+
+h2{
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.add-quote-btn{
+  margin: 25px 0px;
+}
+
+
+
+
+
+

@@ -22,12 +22,12 @@ export class AddQuote extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
+                    <h2>Add Quote</h2>
                     <input type="text" placeholder="Title" onChange={this.handleChange} id="title"/>
                     <input type="text" placeholder="Author" onChange={this.handleChange} id="author"/>
                     <input type="text" placeholder="Quote" onChange={this.handleChange} id="content"/>
-                    <button>Submit Quote</button>
+                    <button className="add-quote-btn right">Submit Quote</button>
                 </form>
-                
             </div>
         )
     }
